@@ -7,10 +7,10 @@ as a back-end project, being not only responsible for shortening it, but also re
 
 - TypeScript;
 - NodeJS;
-- Express
-- PostgreSQL
+- Express;
+- PostgreSQL;
 - Postman;
-- Docker
+- Docker;
 
 ## Planning the Development Steps
 
@@ -34,7 +34,8 @@ as a back-end project, being not only responsible for shortening it, but also re
 It then sends a POST request method consisted of the original URL (URL in test was http://wisereducacao.com) to the server, with a route named "http://localhost:8081/encurtador".
 2. It also makes a GET request method that is an asynchronous function, waiting for the newUrl attribute to be available.
 3. Then, a POST request method is received by the server and it creates the shortened URL called as a "newUrl" attribute in a JSON file; therefore, now the user is able to receive the shortened version as mentioned above.
-4. When receiving a callback to the shortened URL, the user can also issue a GET request that will make the server redirect the user towards the URL saved in the database, or it is not found in the database, return a HTTP 404 response.
+4. When the user makes use of the shortened URL, the user is by consequence issuing a GET request for the original URL as well, which is saved in the database.
+5. Then, the server can either redirect the user towards the original URL, or return a HTTP 404 response.
 
 ## How to Install
 
