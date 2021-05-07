@@ -6,23 +6,27 @@ as a back-end project, being not only responsible for shortening it, but also re
 ## Technologies used
 
 - TypeScript;
-- NodeJS environment;
-- Express to set up server;
-- PostgreSQL to store URLs;
-- Docker for package deployment;
-- Postman for API development
+- NodeJS;
+- Express
+- PostgreSQL
+- Postman;
+- Docker
 
 ## Planning the Development Steps
 
 1. Install npm packages to set up the environment.
-  - express
-  - nodemon for simultaneous alterations
+  - typescript;
+  - express;
+  - nodemon for simultaneous alterations;
   - postgres;
+
 2. Set up an Express app for the server.
-3. Create a static front-end file.
-3. Create a unit testing component.
-4. Write down the HTTP request methods;
-5.
+3. Create a static front-end file with forms.
+4. Create a unit testing component.
+5. Write down the HTTP request methods;
+6. Connect the database;
+7. Use Postman to develop API
+8. Package through Docker.
 
 ## How does it work?
 
