@@ -5,27 +5,33 @@ as a back-end project, being not only responsible for shortening it, but also re
 
 ## Technologies used
 
-TypeScript;
-NodeJS environment;
-Express to set up server;
-PostgreSQL to store URLs;
-Docker for package deployment;
-Postman for endpoint documenting;
+- TypeScript;
+- NodeJS environment;
+- Express to set up server;
+- PostgreSQL to store URLs;
+- Docker for package deployment;
+- Postman for API development
 
-## Development Steps
+## Planning the Development Steps
 
 1. Install npm packages to set up the environment.
-    - express, nodemon, postgres
+  - express
+  - nodemon for simultaneous alterations
+  - postgres;
+2. Set up an Express app for the server.
+3. Create a static front-end file.
+3. Create a unit testing component.
+4. Write down the HTTP request methods;
+5.
 
 ## How does it work?
 
-1. User sends a request to an endpoint so it shortens the URL http://wisereducacao.com
-2. Server returns a JSON file with the shortened version called
-"newUrl" as a subpage (e.g. "http://localhost:8081/abc123ab")
-of the localhost;
-3. The endpoint that saves the URL and returns the shortened URL is a POST method with a route named "http://localhost:8081/shortener" with its body composed of a JSON file with the attribute: {url: "http://wisereducacao.com"}
-4. When receiving a callback to the shortened URL, the server redirects the user towards the URL saved in the database, or it is not found in the database, return a HTTP 404 response.
+1. User ask for the server to shorten a link:
+It then sends a POST request method consisted of the original URL (URL in test was http://wisereducacao.com) to the server, with a route named "http://localhost:8081/encurtador".
+2. It also makes a GET request method that is an asynchronous function, waiting for the newUrl attribute to be available.
+3. Then, a POST request method is received by the server and it creates the shortened URL called as a "newUrl" attribute in a JSON file; therefore, now the user is able to receive the shortened version as mentioned above.
+4. When receiving a callback to the shortened URL, the user can also issue a GET request that will make the server redirect the user towards the URL saved in the database, or it is not found in the database, return a HTTP 404 response.
 
 ## How to Install
 
-Soon.
+npm i encurtador (not currently functional)
