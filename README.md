@@ -3,17 +3,21 @@
 Greetings, traveler. This will be a one-page-only URL shortener made out
 as a back-end project, being not only responsible for shortening it, but also redirectioning a user towards the original page. It is primarily composed as a component to be used in other large services.
 
-
 ## Technologies used
 
 TypeScript;
 NodeJS environment;
-Express;
-PostgreSQL;
-Docker;
+Express to set up server;
+PostgreSQL to store URLs;
+Docker for package deployment;
 Postman for endpoint documenting;
 
-## Steps
+## Development Steps
+
+1. Install npm packages to set up the environment.
+    - express, nodemon, postgres
+
+## How does it work?
 
 1. User sends a request to an endpoint so it shortens the URL http://wisereducacao.com
 2. Server returns a JSON file with the shortened version called
