@@ -5,7 +5,7 @@ as a back-end project, being not only responsible for shortening it, but also re
 
 ## Technologies used
 
-- TypeScript;
+- TypeScript (converted to Javascript).
 - NodeJS;
 - Express;
 - PostgreSQL;
