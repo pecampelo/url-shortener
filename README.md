@@ -7,7 +7,7 @@ as a back-end project, being not only responsible for shortening it, but also re
 
 - TypeScript (converted to Javascript).
 - NodeJS;
-- Express;
+- Express + Jest;
 - PostgreSQL;
 - Postman;
 - Docker;
@@ -19,14 +19,18 @@ as a back-end project, being not only responsible for shortening it, but also re
   - express;
   - nodemon for simultaneous alterations;
   - postgres;
-
-2. Set up an Express app for the server.
-3. Create a static front-end file with forms.
-4. Create a unit testing component.
-5. Write down the HTTP request methods;
-6. Connect the database;
-7. Use Postman to develop API
-8. Package through Docker.
+  - jest for test driven development;
+2. Create a test file that will at first fail the test, as there is
+no code written. After, the code will be written so the test
+will succeed.
+3. Set up an Express app for the server.
+4. Create a static front-end file with forms.
+5. Create a unit testing component.
+6. Write down the HTTP request methods;
+7. Connect the database;
+8. Use Postman to develop API;
+9. Refactor code more if possible.
+10. Package through Docker.
 
 ## How does it work?
 
