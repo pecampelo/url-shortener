@@ -1,4 +1,8 @@
-import { index } from " ./index.ts";
+import { CompareUrl } from " ./server.ts";
+
+test('system returns a proper shortened link', () => {
+  expect(CompareUrl).toBe(true)
+})
 
 // user gives out a longer link
 // system is supposed to shorten the link and store the long and the short.

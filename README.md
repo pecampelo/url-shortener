@@ -15,13 +15,11 @@ as a back-end project, being not only responsible for shortening it, but also re
 ## Planning the Development Steps
 
 1. Install and save these packages for development purposes:
-  - nodemon for simultaneous alterations;
+  - ts-node-dev for simultaneous alterations;
   - jest for test driven development;
-
-2. Install npm packages to set up the environment.
-    - typescript;
-    - express;
-    - postgres;
+  - typescript;
+  - express + @types/express;
+  - postgres;
 
 3. Create a test file that will at first fail the test, as there is
 no code written. After, the code will be written so the test
