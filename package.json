@@ -4,8 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon"
+    "test": "jest"
   },
-  "author": "Pedro Campelo Matheus, pedrohcmatheus@gmail.com",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pecampelo/url-shortener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pecampelo/url-shortener/issues"
+  },
+  "homepage": "https://github.com/pecampelo/url-shortener#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "postgres": "^1.0.2",
+    "typescript": "^4.2.4"
+  }
 }
