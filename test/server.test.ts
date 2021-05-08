@@ -1,4 +1,4 @@
-import { CompareUrl } from " ./server.ts";
+import { CompareUrl } from " ../src/server.ts";
 
 test('system returns a proper shortened link', () => {
   expect(CompareUrl).toBe(true);
