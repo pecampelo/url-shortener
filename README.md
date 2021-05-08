@@ -16,7 +16,7 @@ as a back-end project, being not only responsible for shortening it, but also re
 
 1. Install and save these packages for development purposes:
   - ts-node-dev for simultaneous alterations;
-  - jest for test driven development;
+  - jest for test driven development + @types/jest;
   - typescript;
   - express + @types/express;
   - postgres;

@@ -1,7 +1,7 @@
 import { CompareUrl } from " ./server.ts";
 
 test('system returns a proper shortened link', () => {
-  expect(CompareUrl).toBe(true)
+  expect(CompareUrl).toBe(true);
 })
 
 // user gives out a longer link
