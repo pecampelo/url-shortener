@@ -12,21 +12,26 @@ as a back-end project, being not only responsible for shortening it, but also re
 - Postman;
 - Docker;
 
-## Planning the Development Steps
+## How to Install
 
-1. [DONE]
-Install and save these packages for development purposes:
+// npm i encurtador // not currently functional
+
+## Development Steps
+
+1. [X] Install and save these packages for development purposes:
 - ts-node-dev for simultaneous alterations;
-- jest for test driven development + @types/jest;
-- typescript;
+- config + @types/config;
+- jest + ts-jest + @types/jest;
+- typescript + @types/node;
 - express + @types/express;
-- postgres;
+- pg (postgres module);
+-
 
-2. Set up an Express app for the server. [DONE]
-3. Create a test file that will at first fail the test, as there is
-no code written. After, a mock test in order to test importing of node_modules from the app to the test file will be done. [DONE]
-4. If passed, all possibilities that should be accounted for in a test
-will be written down so there is Test-Driven Development; [DONE]
+2. [X] Set up an Express app for the server.
+3. [X] Create a test file that will at first fail the test, as there is
+no code written. After, a mock test in order to test importing of node_modules from the app to the test file will be done.
+4. [X] If passed, all possibilities that should be accounted for in a test
+will be written down so there is Test-Driven Development;
 5. Write down the HTTP request methods;
 6. Use Postman to check the output of the endpoints;
 7. Connect to the database;

@@ -4,7 +4,7 @@ import { customAlphabet } from 'nanoid';
 const nanoid = customAlphabet('abcdefghijklmnopqrstuvwxyz0987654321', 10);
 
 export interface URL extends Document {
-    id: string;
+    id: string,
     destination: string;
 }
 
@@ -13,9 +13,12 @@ const schema = new postgres.Schema({
       type: String,
       unique: true,
       required: true,
-      default: () => nanoid(),
+      default: () => nanoid()
     },
-    destination { type: String, required: true },
+    destination: {
+      type: String,
+      required: true
+    },
 });
 
 const url = postgres.model<URL>('url', schema);
