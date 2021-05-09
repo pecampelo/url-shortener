@@ -1,6 +1,7 @@
 import express = require('express');
 import config = require('config');
 import routes from './routes';
+import pool from 'pg';
 
 const app = express();
 const port = config.get('port');

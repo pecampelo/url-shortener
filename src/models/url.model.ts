@@ -1,4 +1,4 @@
-import pg, { Document } from "pg";
+import { Pool } from "pg";
 import { customAlphabet } from 'nanoid';
 
 const nanoid = customAlphabet('abcdefghijklmnopqrstuvwxyz0987654321', 10);
@@ -8,7 +8,7 @@ export interface URL extends Document {
     destination: string;
 }
 
-const schema = new pg.Schema({
+const schema = new pg.Pool({
     id: {
       type: String,
       unique: true,

@@ -8,7 +8,7 @@ function routes(app: Express) {
     });
 
     app.post('/api/url', createShortUrl);
-    
+
 
 }
 
