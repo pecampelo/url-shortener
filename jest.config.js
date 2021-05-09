@@ -1,8 +1,8 @@
 module.exports = {
-  roots: ['<rootDir>/src'],
-  preset: 'ts-jest',
+  verbose: true,
+  roots: ['<rootDir>'],
   transform: {
-    '^.+\\.tsx?$': 'ts-jest',
+    "^.+\\.(ts|tsx)$": "ts-jest",
   },
   testEnvironment: 'node',
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
