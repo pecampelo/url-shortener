@@ -4,7 +4,7 @@ URL Shortener
 Greetings, traveler. This will be a one-page-only URL shortener made out
 to be a job interview challenge project, being not only responsible for shortening it, but also redirectioning a user towards the original page. It is primarily composed as a component to be used in other large services.
 
-***
+
 ## Technologies used
 
 - TypeScript (converted to Javascript).
@@ -14,14 +14,13 @@ to be a job interview challenge project, being not only responsible for shorteni
 - Postman;
 - Docker;
 
-***
 ## How to Install
 
-> #### git clone https://github.com/pecampelo/url-shortener.git
-> // not currently functional
->
-> #### npm run dev
-***
+### git clone https://github.com/pecampelo/url-shortener.git
+not currently functional
+
+### npm run dev
+
 ## Development Steps
 
 1. [X] Install and save these packages for development purposes:
@@ -55,8 +54,6 @@ will be written down so there is Test-Driven Development;
 10. Package using Dockerfile.
 
 11. Deploy to Heroku.
-
-***
 
 ## How does it work?
 
