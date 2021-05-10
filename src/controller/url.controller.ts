@@ -9,5 +9,4 @@ export async function createShortUrl(req: Request, res: Response) {
     // Return shortURL
     const newUrl = await url.create({ destination });
     return res.send(newUrl);
-
 };

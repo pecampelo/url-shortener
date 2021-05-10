@@ -3,12 +3,16 @@ import { createShortUrl } from '../controller/url.controller';
 
 function routes(app: Express) {
 
-    app.get('/encurtador', (req: Request, res: Response) => {
-        return res.send('App is healthy!')
+    app.get('/', (req: Request, res: Response) => {
+        res.redirect('/encurtador');
     });
 
-    app.post('/api/url', createShortUrl);
+    app.get('/encurtador', (req: Request, res: Response) => {
+        res.render('index');
+        console.log('Server is working!');
+    });
 
+    app.post('/shortUrl', createShortUrl);
 
 }
 

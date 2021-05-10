@@ -24,6 +24,7 @@ as a back-end project, being not only responsible for shortening it, but also re
 - express + @types/express;
 - jest + ts-jest + @types/jest;
 - typescript + @types/node;
+- ejs for user interface;
 - body-parser to store data as JSON;
 - pg (postgres module);
 
@@ -35,11 +36,11 @@ no code written. After, a mock test in order to test importing of node_modules f
 4. [X] If passed, all possibilities that should be accounted for in a test
 will be written down so there is Test-Driven Development;
 
-5. Write down the HTTP request methods;
+5. Use Postman to check the output of the endpoints;
 
-6. Use Postman to check the output of the endpoints;
+6. Connect to the database;
 
-7. Connect to the database;
+7. Write down the HTTP request methods;
 
 8. Create a static front-end file with forms.
 
@@ -53,7 +54,7 @@ will be written down so there is Test-Driven Development;
 
 1. User ask for the server to shorten a link. That does 2 things:
 
-- It sends a POST request method consisted of the original URL (URL in test was http://wisereducacao.com) to the server, with a route named "http://localhost:8081/encurtador".
+- It sends a POST request method consisted of the original URL (URL in test was http://wisereducacao.com) to the server, with a route named "http://localhost:8001/encurtador".
 
 2. Then, the server creates the shortened URL called as a "newUrl" attribute in a JSON file with an index number and stored in the database.
 

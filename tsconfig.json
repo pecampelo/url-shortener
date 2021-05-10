@@ -5,9 +5,10 @@
     "lib": ["es2017"],
     "strict": true,
     "declaration": true,
-    "outDir": "dist",
-    "sourceMap": true
+    "outDir": "built",
+    "sourceMap": true,
+    "allowJs": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "* */*.spec.ts"]
 }

@@ -1,18 +1,18 @@
 import express = require('express');
 import config = require('config');
 import routes from './routes';
-import pool from 'pg';
+import client = require('./database/dbconfig');
 
 const app = express();
 const port = config.get('port');
 
-// function sum(a: number, b: number) {
-//   return a + b;
-// };
+import bodyParser = require("body-parser");
+app.use(bodyParser.json());
 
-app.listen(port, () => {
+app.set('view engine', 'ejs');
+app.set('views', './src/views');
+
+app.listen(process.env.PORT || port, () => {
     console.log(`Application listening at http://localhost:${port}`);
     routes(app);
 });
-
-// export default sum;
