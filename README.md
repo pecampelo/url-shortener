@@ -36,9 +36,9 @@ no code written. After, a mock test in order to test importing of node_modules f
 4. [X] If passed, all possibilities that should be accounted for in a test
 will be written down so there is Test-Driven Development;
 
-5. Use Postman to check the output of the endpoints;
+5. Connect to the database;
 
-6. Connect to the database;
+6. Use Postman to check the output of the endpoints;
 
 7. Write down the HTTP request methods;
 

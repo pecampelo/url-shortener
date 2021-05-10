@@ -1,26 +1,23 @@
 import client = require('pg');
 import config from 'config';
 
+const connectionString = 'postgresql://postgres:postgres@localhost:3211/url_shortener'
+
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'url_shortener',
-  password: 'postgres',
-  port: 5432,
+  connectionString,
 });
 
 pool.query('SELECT NOW()', (err, res) => {
   console.log(err, res)
   pool.end()
 });
+
 const client = new Client({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'url_shortener',
-  password: 'postgres',
-  port: 5432,
+  connectionString,
 });
-client.connect()
+
+client.connect();
+
 client.query('SELECT NOW()', (err, res) => {
   console.log(err, res)
   client.end()
