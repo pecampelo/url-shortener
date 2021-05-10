@@ -8,8 +8,15 @@ routes.get('/', (req, res) => {
 });
 
 routes.get('/encurtador', (req: Request, res: Response) => {
-      return res.render('index');
-      return res.json({ hello: 'World'});
+      res.render('index');
+      // res.json({ hello: 'World'});
 });
+
+
+routes.post('/newUrl', (req, res, next) => {
+      const url = req.body.url;
+      const code = generateCode();
+      res.send('http://localhost:3000' + code);
+})
 
 export default routes;
