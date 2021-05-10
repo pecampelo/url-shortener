@@ -16,20 +16,12 @@ to be a job interview challenge project, being not only responsible for shorteni
 
 ## How to Install
 
-
-
 ### git clone https://github.com/pecampelo/url-shortener.git
 not currently functional
 
-
-
 ### npm run dev
 
-
-
 ## Development Steps
-
-
 
 1. [X] Install and save these packages for development purposes:
 - ts-node-dev for simultaneous alterations;
@@ -41,17 +33,13 @@ not currently functional
 - body-parser to store data as JSON;
 - pg (postgres module);
 
-
 2. [X] Set up an Express app for the server.
-
 
 3. [X] Create a test file that will at first fail the test, as there is
 no code written. After, a mock test in order to test importing of node_modules from the app to the test file will be done.
 
-
 4. [X] If passed, all possibilities that should be accounted for in a test
 will be written down so there is Test-Driven Development;
-
 
 5. [X] Create a static front-end file with forms.
 
@@ -66,8 +54,6 @@ will be written down so there is Test-Driven Development;
 10. Package using Dockerfile.
 
 11. Deploy to Heroku.
-
-
 
 ## How does it work?
 
