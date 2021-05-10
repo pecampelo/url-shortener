@@ -1,19 +1,15 @@
-import {Express, Request, Response} from 'express';
-import { createShortUrl } from '../controller/url.controller';
+import { Router, Request, Response } from 'express';
+import controller = require('../controller/url.controller');
 
-function routes(app: Express) {
+const routes = Router();
 
-    app.get('/', (req: Request, res: Response) => {
-        res.redirect('/encurtador');
-    });
+routes.get('/', (req, res) => {
+    return res.redirect('/encurtador');
+});
 
-    app.get('/encurtador', (req: Request, res: Response) => {
-        res.render('index');
-        console.log('Server is working!');
-    });
-
-    app.post('/shortUrl', createShortUrl);
-
-}
+routes.get('/encurtador', (req: Request, res: Response) => {
+      return res.render('index');
+      return res.json({ hello: 'World'});
+});
 
 export default routes;

@@ -1,18 +1,16 @@
 import express = require('express');
-import config = require('config');
 import routes from './routes';
-import client = require('./database/dbconfig');
+import db = require('../models');
 
 const app = express();
-const port = config.get('port');
+const port = 8001;
 
-import bodyParser = require("body-parser");
-app.use(bodyParser.json());
+app.use(express.json());
+app.use(routes);
 
 app.set('view engine', 'ejs');
 app.set('views', './src/views');
 
 app.listen(process.env.PORT || port, () => {
-    console.log(`Application listening at http://localhost:${port}`);
-    routes(app);
+      console.log(`Application listening at http://localhost:${port}`);
 });

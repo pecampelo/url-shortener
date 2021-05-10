@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import url from '../models/url.model';
+import urlsData = require('../models/url.model');
 
 
 export async function createShortUrl(req: Request, res: Response) {
