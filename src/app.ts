@@ -3,7 +3,7 @@ import routes from './routes';
 import db = require('../models');
 
 const app = express();
-const port = 8001;
+const port = process.env.PORT || 8001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
