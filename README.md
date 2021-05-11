@@ -19,7 +19,7 @@ to be a job interview challenge project, being not only responsible for shorteni
 ### git clone https://github.com/pecampelo/url-shortener.git
 not currently functional
 
-### npm run dev
+### npm run start
 
 ## Development Steps
 
