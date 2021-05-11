@@ -1,9 +1,7 @@
-import controller = require('..controller/url.controller');
-
-test('server should receive a url from the user', () => {
-  
-  expect(urlReceived).toBe(true);
-});
+// test('server should receive a url from the user', () => {
+//
+//   expect(urlReceived).toBe(true);
+// });
 
 
 // test('should store url as JSON with an id', () => {

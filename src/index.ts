@@ -1,6 +1,6 @@
 import express = require('express');
 import routes from './routes';
-import db = require('../models');
+import db = require('./models/url.model');
 
 const app = express();
 const port = process.env.PORT || 8001;

@@ -11,13 +11,13 @@ function generateNewUrl() {
 }
 
 //  alternate
-export async function createShortUrl(req: Request, res: Response) {
-    // Get long destination
-    const { destination } = req.body;
-    // Shorten ShortURL
-    // Return shortURL
-    const newUrl = await url.create({ destination });
-    return res.send(newUrl);
-};
-
+// export async function createShortUrl(req: Request, res: Response) {
+//     // Get long destination
+//     const { destination } = req.body;
+//     // Shorten ShortURL
+//     // Return shortURL
+//     const newUrl = await url.create({ destination });
+//     return res.send(newUrl);
+// };
+//
 export default generateNewUrl;
