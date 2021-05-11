@@ -5,7 +5,8 @@
     "lib": ["es2017"],
     "strict": true,
     "declaration": true,
-    "outDir": "./build",
+    "rootDir": "src",
+    "outDir": "dist",
     "sourceMap": true,
     "allowJs": true
   },
