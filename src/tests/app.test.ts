@@ -1,7 +1,7 @@
 import controller = require('..controller/url.controller');
 
 test('server should receive a url from the user', () => {
-  
+
   expect(urlReceived).toBe(true);
 });
 

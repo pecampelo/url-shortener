@@ -43,17 +43,18 @@ will be written down so there is Test-Driven Development;
 
 5. [X] Create a static front-end file with forms.
 
-6. Connect to a database;
+6. Write down the HTTP request methods;
 
-7. Write down the HTTP request methods;
+7. Deploy to Heroku.
 
 8. Use Postman to test methods;
 
-9. Write functions that suffice the tests passing.
+9. Connect to a database;
 
-10. Package using Dockerfile.
+10. Write functions that suffice the tests passing.
 
-11. Deploy to Heroku.
+11. Package using Dockerfile.
+
 
 ## How does it work?
 

@@ -33,6 +33,6 @@ routes.post('/encurtador', (req, res) => {
     console.log(newUrl);
     return res.send(`http://localhost:8001/${newUrl}`);
 })
->>>>>>> dev
+
 
 export default routes;
