@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import controller = require('../controller/url.controller');
+import generateNewUrl from '../controller/url.controller';
 
 const routes = Router();
 
@@ -8,15 +8,17 @@ routes.get('/', (req, res) => {
 });
 
 routes.get('/encurtador', (req: Request, res: Response) => {
-      res.render('index');
-      // res.json({ hello: 'World'});
+    res.render('index');
+    return res.end();
 });
 
 
-routes.post('/newUrl', (req, res, next) => {
-      const url = req.body.url;
-      const code = generateCode();
-      res.send('http://localhost:3000' + code);
+routes.post('/encurtador', (req, res) => {
+    const { url } = req.body;
+    console.log(url);
+    const newUrl = generateNewUrl();
+    console.log(newUrl);
+    return res.send(`http://localhost:8001/${newUrl}`);
 })
 
 export default routes;

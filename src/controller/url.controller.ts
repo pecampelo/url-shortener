@@ -1,15 +1,16 @@
 import { Request, Response } from 'express';
 import urlsData = require('../models/url.model');
 
+// main function
 function generateNewUrl() {
       let text = '';
-      const possibleText = 'abcdefghijklmnopqrstuvwxyz0123456789';
+      const possibleUrl = 'abcdefghijklmnopqrstuvwxyz0123456789';
       for (let i = 0; i < 10; i++)
-          text += possible.charAt(Math.floor(Math.random() * possible.length));
+          text += possibleUrl.charAt(Math.floor(Math.random() * possibleUrl.length));
       return text;
 }
 
-
+//  alternate
 export async function createShortUrl(req: Request, res: Response) {
     // Get long destination
     const { destination } = req.body;
@@ -18,3 +19,5 @@ export async function createShortUrl(req: Request, res: Response) {
     const newUrl = await url.create({ destination });
     return res.send(newUrl);
 };
+
+export default generateNewUrl;
