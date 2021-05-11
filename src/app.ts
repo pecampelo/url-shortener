@@ -14,5 +14,5 @@ app.set('view engine', 'ejs');
 app.set('views', './src/views');
 
 app.listen(process.env.PORT || port, () => {
-      console.log(`Application listening at http://localhost:${port}`);
+      console.log(`Application listening at port ${port}`);
 });
