@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "jest --env node",
-    "start": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules src/app.ts",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules src/app.ts",
+    "start": "src/app.ts"
     "tsc": "tsc",
     "sequelize": "sequelize"
   },
