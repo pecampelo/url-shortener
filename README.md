@@ -1,20 +1,25 @@
-# URL Shortener
+URL Shortener
+=======================
 
 Greetings, traveler. This will be a one-page-only URL shortener made out
-as a back-end project, being not only responsible for shortening it, but also redirectioning a user towards the original page. It is primarily composed as a component to be used in other large services.
+to be a job interview challenge project, being not only responsible for shortening it, but also redirectioning a user towards the original page. It is primarily composed as a component to be used in other large services.
+
 
 ## Technologies used
 
 - TypeScript (converted to Javascript).
 - NodeJS;
-- Express + Jest;
+- Express + *Jest*;
 - PostgreSQL;
 - Postman;
 - Docker;
 
 ## How to Install
 
-// npm i encurtador // not currently functional
+### git clone https://github.com/pecampelo/url-shortener.git
+not currently functional
+
+### npm run dev
 
 ## Development Steps
 
@@ -24,6 +29,7 @@ as a back-end project, being not only responsible for shortening it, but also re
 - express + @types/express;
 - jest + ts-jest + @types/jest;
 - typescript + @types/node;
+- ejs for user interface;
 - body-parser to store data as JSON;
 - pg (postgres module);
 
@@ -35,15 +41,15 @@ no code written. After, a mock test in order to test importing of node_modules f
 4. [X] If passed, all possibilities that should be accounted for in a test
 will be written down so there is Test-Driven Development;
 
-5. Write down the HTTP request methods;
+5. [X] Create a static front-end file with forms.
 
-6. Use Postman to check the output of the endpoints;
+6. Connect to a database;
 
-7. Connect to the database;
+7. Write down the HTTP request methods;
 
-8. Create a static front-end file with forms.
+8. Use Postman to test methods;
 
-9. Refactor code more if possible.
+9. Write functions that suffice the tests passing.
 
 10. Package using Dockerfile.
 
@@ -53,7 +59,7 @@ will be written down so there is Test-Driven Development;
 
 1. User ask for the server to shorten a link. That does 2 things:
 
-- It sends a POST request method consisted of the original URL (URL in test was http://wisereducacao.com) to the server, with a route named "http://localhost:8081/encurtador".
+- It sends a POST request method consisted of the original URL (URL in test was http://wisereducacao.com) to the server, with a route named "http://localhost:8001/encurtador".
 
 2. Then, the server creates the shortened URL called as a "newUrl" attribute in a JSON file with an index number and stored in the database.
 

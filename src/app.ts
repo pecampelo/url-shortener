@@ -1,17 +1,18 @@
 import express = require('express');
-import config = require('config');
 import routes from './routes';
+import db = require('../models');
 
 const app = express();
-const port = config.get('port');
+const port = 8001;
 
-// function sum(a: number, b: number) {
-//   return a + b;
-// };
+app.use(express.json());
+app.use(express.urlencoded({ extended: false}));
+app.use(routes);
+app.use(express.static(__dirname + '/public'));
 
-app.listen(port, () => {
-    console.log(`Application listening at http://localhost:${port}`);
-    routes(app);
+app.set('view engine', 'ejs');
+app.set('views', './src/views');
+
+app.listen(process.env.PORT || port, () => {
+      console.log(`Application listening at http://localhost:${port}`);
 });
-
-// export default sum;
