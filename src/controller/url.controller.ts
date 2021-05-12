@@ -1,23 +1,24 @@
 import { Request, Response } from 'express';
-import urlsData = require('../models/url.model');
+import { Link } from '../models/url.model';
 
 // main function
-function generateNewUrl() {
+function generateShortUrl() {
       let text = '';
       const possibleUrl = 'abcdefghijklmnopqrstuvwxyz0123456789';
       for (let i = 0; i < 10; i++)
           text += possibleUrl.charAt(Math.floor(Math.random() * possibleUrl.length));
       return text;
-}
+};
 
-//  alternate
-// export async function createShortUrl(req: Request, res: Response) {
-//     // Get long destination
-//     const { destination } = req.body;
-//     // Shorten ShortURL
-//     // Return shortURL
-//     const newUrl = await url.create({ destination });
-//     return res.send(newUrl);
+let linkArray = {
+  links : []
+};
+
+// function createNewId(longUrlReceived, newUrlCreated) {
+//     let newId = (linkArray.links.length) + 1 ;
+//     let link = new Link(longUrlReceived, newUrlCreated);
+//     return link;
 // };
-//
-export default generateNewUrl;
+
+export default generateShortUrl;
+// export default createNewId;

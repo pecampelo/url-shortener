@@ -43,17 +43,21 @@ will be written down so there is Test-Driven Development;
 
 5. [X] Create a static front-end file with forms.
 
-6. Connect to a database;
+6. [X] Write HTTP request methods and create shortener function.
 
-7. Write down the HTTP request methods;
+7. [X] Deploy to Heroku.
 
-8. Use Postman to test methods;
+8. Redirect user to longUrl page.
 
-9. Write functions that suffice the tests passing.
+9. Connect to a database in order to save Urls.
 
-10. Package using Dockerfile.
+10. Use Postman to test methods and save collection to package.
 
-11. Deploy to Heroku.
+11. Write functions that suffice the tests passing.
+
+12. Package using Dockerfile.
+
+
 
 ## How does it work?
 

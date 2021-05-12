@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import generateNewUrl from '../controller/url.controller';
+import generateShortUrl from '../controller/url.controller';
 
 const routes = Router();
 
@@ -12,13 +12,17 @@ routes.get('/encurtador', (req: Request, res: Response) => {
     return res.end();
 });
 
+routes.get('/:shortUrl', (req, res) => {
+    const { shortUrl } = req.params;
+});
 
 routes.post('/encurtador', (req, res) => {
-    const { url } = req.body;
+    const url = req.body.url;
     console.log(url);
-    const newUrl = generateNewUrl();
-    console.log(newUrl);
-    return res.send(`http://localhost:8001/${newUrl}`);
-})
+    const newUrlCreated = generateShortUrl();
+    console.log(newUrlCreated);
+    res.status(201).send("Shortened the link!");
+});
+
 
 export default routes;

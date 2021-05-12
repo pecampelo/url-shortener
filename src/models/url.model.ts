@@ -1,8 +1,21 @@
-import { customAlphabet } from 'nanoid';
-const nanoid = customAlphabet('abcdefghijklmnopqrstuvwxyz0987654321', 10);
+let linkArray = {
+    links : []
+};
 
-// import db = require("../database/index");
+let exampleLongUrl = 'http://www.google.com';
+let exampleNewUrl = 'asdoivrajj';
 
-// exports.getUrls= function() {
-//     return db.query('select * from url');
-// }
+class Link {
+    constructor(longUrlReceived, newUrlCreated){
+          this.clientData = {
+              id : null,
+              longUrlReceived: undefined,
+              newUrlCreated: undefined
+          }
+          this.ServerData = {
+              createdAt : undefined,
+              updatedAt : undefined,
+              tokenAccess : null
+          }
+      }
+};
