@@ -1,10 +1,9 @@
 import express = require('express');
 import routes from './routes';
 import bodyParser = require('body-parser');
-// import database = require('./database/index');
 
 const app = express();
-const port = process.env.PORT || 8001;
+const port = process.env.PORT || 8081;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -17,5 +16,5 @@ app.set('view engine', 'ejs');
 app.set('views', './src/views');
 
 app.listen(process.env.PORT || port, () => {
-      console.log(`Application listening in on port ${port}`);
+      console.log(`Server is currently live on port ${port}`);
 });
