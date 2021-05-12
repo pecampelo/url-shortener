@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Link } from '../models/url.model';
+// import { Link } from '../models/url.model';
 
 // main function
 function generateShortUrl() {
