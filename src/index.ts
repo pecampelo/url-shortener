@@ -1,7 +1,7 @@
 import express = require('express');
 import routes from './routes';
 import bodyParser = require('body-parser');
-import database = require('./database/index');
+// import database = require('./database/index');
 
 const app = express();
 const port = process.env.PORT || 8001;
