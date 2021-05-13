@@ -1,16 +1,22 @@
 URL Shortener
 =======================
 
-Greetings, traveler. This will be a one-page-only URL shortener made out
-to be a job interview challenge project, being not only responsible for shortening it, but also redirectioning a user towards the original page. It is primarily composed as a component to be used in other large services.
+Greetings, traveler. This is a project for a URL shortener made out
+to shorten and redirection a user towards an original previously typed-in page. It is primarily composed as a component to be used in other large services, and it was proposed as a technical challenge for a job interview.
+
+Wanna see it? >> https://url-shortener1234567.herokuapp.com/encurtador
+
+Want to see its documentation? There is a little story there.
+
+https://documenter.getpostman.com/view/15716598/TzRVdRAp
 
 
-## Technologies used
+## Technologies proposed
 
-- TypeScript (converted to Javascript).
+- TypeScript (compiled to Javascript).
 - NodeJS;
 - Express + *Jest*;
-- PostgreSQL;
+- PostgreSQL through pg;
 - Postman;
 - Docker;
 
@@ -19,7 +25,12 @@ to be a job interview challenge project, being not only responsible for shorteni
 ### git clone https://github.com/pecampelo/url-shortener.git
 not currently functional
 
-### npm run start
+### npm install
+
+There are two ways you can run this server:
+
+1. **npm run postinstall** followed by **npm start** for production purposes.
+2. **npm run dev** for development and continuous debugging.
 
 ## Development Steps
 
@@ -47,11 +58,11 @@ will be written down so there is Test-Driven Development;
 
 7. [X] Deploy to Heroku.
 
-8. Redirect user to longUrl page.
+8. [X] Connect to a database in order to save Urls.
 
-9. Connect to a database in order to save Urls.
+9. [X] Use Postman to test methods and save collection to package.
 
-10. Use Postman to test methods and save collection to package.
+10. Redirect user to longUrl page.
 
 11. Write functions that suffice the tests passing.
 
