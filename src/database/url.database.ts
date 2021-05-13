@@ -19,21 +19,3 @@ client.query('SELECT table_schema, table_name FROM information_schema.tables;', 
 
 
 const a = 1;
-
-// let exampleLongUrl = 'http://www.google.com';
-// let exampleNewUrl = 'asdoivrajj';
-
-// class Link {
-//     constructor(longUrlReceived: string, newUrlCreated: string){
-//           this.clientData = {
-//               id : null,
-//               longUrlReceived: undefined,
-//               newUrlCreated: undefined
-//           }
-//           this.ServerData = {
-//               createdAt : undefined,
-//               updatedAt : undefined,
-//               tokenAccess : null
-//           }
-//       }
-// };
