@@ -23,7 +23,6 @@ https://documenter.getpostman.com/view/15716598/TzRVdRAp
 ## How to Install
 
 ### git clone https://github.com/pecampelo/url-shortener.git
-not currently functional
 
 ### npm install
 
