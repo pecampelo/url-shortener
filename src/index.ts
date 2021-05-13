@@ -1,6 +1,7 @@
 import express = require('express');
 import routes from './routes';
 import bodyParser = require('body-parser');
+import db = require('../models/index');
 
 const app = express();
 const port = process.env.PORT || 8081;

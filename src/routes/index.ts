@@ -3,14 +3,13 @@ import generateShortUrl from '../controller/url.controller';
 
 const routes = Router();
 
-
 routes.get('/', (req, res) => {
     return res.redirect('/encurtador');
 });
 
-routes.get('/encurtador', (req: Request, res: Response) => {
+routes.get('/encurtador', (req, res) => {
     res.render('index');
-    return res.end();
+    res.end();
 });
 
 // routes.get('/:newUrlCreated', (req, res) => {
@@ -20,9 +19,10 @@ routes.get('/encurtador', (req: Request, res: Response) => {
 routes.post('/encurtador', (req, res) => {
     const url = req.body.url;
     console.log(url);
-    const newUrlCreated = generateShortUrl();
-    console.log(newUrlCreated);
-    res.status(201).send(`Shortened the link!`);
+    const shortUrl = generateShortUrl();
+    console.log(shortUrl);
+    res.send(`Shortened the link! >>>> ${shortUrl}`);
+    return shortUrl;
 });
 
 
