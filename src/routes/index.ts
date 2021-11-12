@@ -1,10 +1,10 @@
 import { Router, Request, Response } from 'express';
-import generateShortUrl from '../controller/url.controller';
+import LocatorController from '../controllers/locatorController';
 
 const routes = Router();
 
 
-routes.get('/', (req, res) => {
+routes.get('/', (req: Request, res: Response) => {
     return res.redirect('/encurtador');
 });
 

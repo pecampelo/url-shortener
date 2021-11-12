@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonJs",
-    "lib": ["es2017"],
+    "lib": ["es2021"],
     "strict": true,
     "declaration": true,
     "rootDir": "src",
@@ -10,6 +10,6 @@
     "sourceMap": true,
     "allowJs": true
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*", "src/controllers/.ts"],
   "exclude": ["node_modules", "* */*.spec.ts"]
 }

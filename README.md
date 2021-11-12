@@ -28,8 +28,8 @@ https://documenter.getpostman.com/view/15716598/TzRVdRAp
 
 There are two ways you can run this server:
 
-1. **npm run postinstall** followed by **npm start** for production purposes.
-2. **npm run dev** for development and continuous debugging.
+* 1. **npm run postinstall** followed by **npm start** for production purposes.
+* 2. **npm run dev** for development and continuous debugging.
 
 ## Development Steps
 
