@@ -1,8 +1,9 @@
 URL Shortener
 =======================
 
-Greetings, traveler. This is a project for a URL shortener made out
-to shorten and redirection a user towards an original previously typed-in page. It is primarily composed as a component to be used in other large services, and it was proposed as a technical challenge for a job interview.
+Greetings, traveler. This is a WIP project (Work in Progress Project) of a URL shortener made out
+to shorten and redirect a user towards an original previously typed-in page. It was primarily programmed to be 
+a microservice component, and it all started from a technical challenge for a job interview.
 
 Wanna see it? >> https://url-shortener1234567.herokuapp.com/encurtador
 
@@ -23,7 +24,6 @@ https://documenter.getpostman.com/view/15716598/TzRVdRAp
 ## How to Install
 
 ### git clone https://github.com/pecampelo/url-shortener.git
-
 ### npm install
 
 There are two ways you can run this server:
@@ -31,7 +31,7 @@ There are two ways you can run this server:
 * 1. **npm run postinstall** followed by **npm start** for production purposes.
 * 2. **npm run dev** for development and continuous debugging.
 
-## Development Steps
+## My Development Steps
 
 1. [X] Install and save these packages for development purposes:
 - ts-node-dev for simultaneous alterations;
